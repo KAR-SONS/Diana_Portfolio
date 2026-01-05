@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Diana Nthenya Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/css/styles.css"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: "#0b0f0e",
+            surface: "#111827",
+            accent: "#6eff9a",
+            muted: "#9ca3af"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-bg text-gray-200 font-sans">
+
+<!-- NAV -->
+<nav class="fixed top-0 w-full bg-bg/80 backdrop-blur z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-end space-x-6 text-s">
+    <a href="#about" class="hover:text-accent">About</a>
+    <a href="#skills" class="hover:text-accent">Skills</a>
+    <a href="#projects" class="hover:text-accent">Projects</a>
+    <a href="#contact" class="hover:text-accent">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="min-h-screen flex items-center pt-24">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+    <!-- Text -->
+    <div>
+      <span class="inline-block border border-accent text-accent px-6 py-2 rounded-full text-s mb-4">
+        Hybrid Data Analyst | IoT & Smart Systems Enthusiast
+      </span>
+
+      <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+        DIANA<br>
+        <span class="text-accent">NTHENYA</span> <br>
+      </h1>
+
+      <p class="mt-6 text-muted max-w-md">
+        Turning real-time sensor data into actionable insights by combining IoT systems and data analytics.
+      </p>
+
+      <div class="mt-8 flex gap-4">
+        <a href="#projects"
+           class="border border-accent px-6 py-3 rounded-lg hover:bg-accent hover:text-bg transition">
+          Projects
+        </a>
+        <a href="#"
+           class="bg-accent text-bg px-6 py-3 rounded-lg font-semibold">
+          Download CV
+        </a>
+      </div>
+    </div>
+
+    <!-- Image -->
+    <div class="flex justify-center">
+      <div class="relative">
+        <div class="w-72 h-72 rounded-full bg-accent absolute inset-0 -z-10"></div>
+        <img src="assets/Diana.jpeg"
+             class="w-72 h-72 rounded-full object-cover border-4 border-bg"/>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-24 bg-surface">
+  <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+    <h2 class="text-4xl font-bold">
+      Hello,<br> I’m <span class="text-accent">Diana</span>
+    </h2>
+
+    <p class="text-muted leading-relaxed">
+      I am a tech-driven professional with hands-on experience in <span class="text-accent">IoT-based systems and data analysis</span>,
+      passionate about solving real-world problems using data. I enjoy working across the full data lifecycle,
+      from <span class="text-accent">data collection using sensors</span> to <span class="text-accent">analysis and visualization for informed decision-making</span>. 
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-24">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-12">
+      <span class="border border-accent px-5 py-2 rounded-full text-sm text-accent">
+        Core Skills
+      </span>
+    </h2>
+
+    <div class="grid md:grid-cols-4 gap-8">
+      <div>
+        <h3 class="text-accent font-semibold mb-4">Programming</h3>
+        <ul class="space-y-2 text-muted">
+          <li>Data & Analytics</li>
+          <li>Data Cleaning & Preparation</li>
+          <li>Exploratory Data Analysis (EDA)</li>
+          <li>Data Visualization & Reporting</li>
+          <li>Insight Generation</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-accent font-semibold mb-4">IoT & Smart Systems</h3>
+        <ul class="space-y-2 text-muted">
+          <li>Sensor Data Collection</li>
+          <li>Microcontroller-Based Systems</li>
+          <li>Smart Monitoring Solutions</li>
+          <li>Real-Time Data Capture</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-accent font-semibold mb-4">Tools & Technologies</h3>
+        <ul class="space-y-2 text-muted">
+          <li>Python (pandas, matplotlib)</li>
+          <li>Excel / Google Sheets</li>
+          <li>IoT Sensors (Soil Moisture, Temperature, Humidity)</li>
+          <li>Arduino / ESP8266 / ESP32</li>
+          <li>Basic Dashboards</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-24 bg-surface">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-12">
+      <span class="border border-accent px-5 py-2 rounded-full text-sm text-accent">
+        Notable Projects
+      </span>
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-2 items-center">
+      <img src="assets/Farm_project.jpeg" class="rounded-lg"/>
+      <img src="assets/Farm-project2.jpeg" class="rounded-lg h-[270px]"/>
+
+      <div class="md:col-span-2 mt-6">
+        <h3 class="text-2xl font-bold text-accent mb-4">
+          IoT-Based Smart Farm Monitoring System
+        </h3>
+        <p class="text-xl mb-6 leading-relaxed ">
+          This project presents the design and implementation of an Internet of Things 
+         (IoT)–based Smart Farming System aimed at <span class="text-accent">improving agricultural productivity through real-time monitoring of soil and environmental conditions</span>.
+          Sensor data--including <span class="text-accent">soil moisture, soil pH, temperature, humidity, fertilizer type, and crop yield</span>--is collected, stored, and visualized using Power BI. 
+          The analysis provides insights that support precision agriculture practices, enabling optimized resource management and yield improvement.
+        </p>
+
+        <div class="flex gap-4">
+          <a class="border border-accent px-4 py-2 rounded hover:bg-accent hover:text-bg">
+            Download Full Deck
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+ <section id="skills" class="py-24">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-12">
+      <span class="border border-accent px-5 py-2 rounded-full text-sm text-accent">
+        Contact Info
+      </span>
+    </h2>
+    </div>
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+      <div>
+        <h3 class="text-2xl font-bold text-accent mb-4">
+          Get in Touch
+        </h3>
+        <p class="text-muted leading-relaxed mb-6">
+          Feel free to reach out if you have any questions or would like to connect!
+        </p>
+
+    </section>
+
+</body>
+</html>
