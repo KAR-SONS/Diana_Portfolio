@@ -1,0 +1,18 @@
+
+.icons i{
+    color: #6eff9a; 
+    transition: color 0.3s;
+    font-size: 30px;
+}
+.icons span a{
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 20px;
+}
+.icons i:hover {
+    color: #00b300; 
+}
+.icons span a:hover {
+    color: #555; 
+}

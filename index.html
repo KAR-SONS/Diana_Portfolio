@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Diana Nthenya Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="/css/styles.css"></script>
-  
+   <script src="https://kit.fontawesome.com/88de586102.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css" />
   <script>
     tailwind.config = {
       theme: {
@@ -98,13 +98,13 @@
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-3xl font-bold mb-12">
       <span class="border border-accent px-5 py-2 rounded-full text-sm text-accent">
-        Core Skills
+        Technical Skills
       </span>
     </h2>
 
     <div class="grid md:grid-cols-4 gap-8">
       <div>
-        <h3 class="text-accent font-semibold mb-4">Programming</h3>
+        <h3 class="text-accent font-semibold mb-4">Core Skills</h3>
         <ul class="space-y-2 text-muted">
           <li>Data & Analytics</li>
           <li>Data Cleaning & Preparation</li>
@@ -164,9 +164,11 @@
         </p>
 
         <div class="flex gap-4">
-          <a class="border border-accent px-4 py-2 rounded hover:bg-accent hover:text-bg">
-            Download Full Deck
-          </a>
+          <button class="border border-accent px-4 py-2 rounded hover:bg-accent hover:text-bg"
+           onclick="window.open('./assets/IoT_SMART_FARM_REPORT(1).docx')"
+          >
+            View Full Deck
+          </button>
         </div>
       </div>
     </div>
@@ -190,6 +192,17 @@
         <p class="text-muted leading-relaxed mb-6">
           Feel free to reach out if you have any questions or would like to connect!
         </p>
+
+        <div class="icons flex items-center justify-between text-lg mb-4">
+            <i class="fa-regular fa-paper-plane"></i>
+            <span class="ml-2 text-muted"><a href="mailto:diananthenya46@gmail.com">Email</a></span>
+
+            <i class="fa-brands fa-linkedin-in"></i>
+             <span class="ml-2 text-muted"><a href="mailto:diananthenya46@gmail.com">Linkedin</a></span>
+
+            <i class="fa-brands fa-github"></i>
+            <span class="ml-2 text-muted"><a href="mailto:diananthenya46@gmail.com">Github</a></span>
+        </div>
 
     </section>
 
