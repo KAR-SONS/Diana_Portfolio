@@ -1,0 +1,26 @@
+{
+  "name": "diana_portfolio",
+  "version": "1.0.0",
+  "description": "This is the Portfolio for Data Analyst Diana Nthenya. It is a Html + Javascript website with a maximum of 3 pages and seamless navigation through the main page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KAR-SONS/Diana_Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KAR-SONS/Diana_Portfolio/issues"
+  },
+  "homepage": "https://github.com/KAR-SONS/Diana_Portfolio#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18"
+  }
+}
