@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Diana Nthenya Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
    <script src="https://kit.fontawesome.com/88de586102.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css" />
   <script>
@@ -23,11 +24,12 @@
   </script>
 </head>
 
-<body class="bg-bg text-gray-200 font-sans">
+
+<body class="bg-bg text-gray-200 font-sans overflow-x-hidden">
 
 <!-- NAV -->
 <nav class="fixed top-0 w-full bg-bg/80 backdrop-blur z-50">
-  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-end space-x-6 text-s">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-center space-x-6 text-s">
     <a href="#about" class="hover:text-accent">About</a>
     <a href="#skills" class="hover:text-accent">Skills</a>
     <a href="#projects" class="hover:text-accent">Projects</a>
@@ -40,7 +42,7 @@
   <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
     <!-- Text -->
-    <div>
+    <div data-aos="fade-right">
       <span class="inline-block border border-accent text-accent px-6 py-2 rounded-full text-s mb-4">
         Hybrid Data Analyst | IoT & Smart Systems Enthusiast
       </span>
@@ -67,7 +69,7 @@
     </div>
 
     <!-- Image -->
-    <div class="flex justify-center">
+    <div data-aos="fade-left" class="flex justify-center">
       <div class="relative">
         <div class="w-72 h-72 rounded-full bg-accent absolute inset-0 -z-10"></div>
         <img src="assets/Diana.jpeg"
@@ -81,11 +83,11 @@
 <!-- ABOUT -->
 <section id="about" class="py-24 bg-surface">
   <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12">
-    <h2 class="text-4xl font-bold">
+    <h2 data-aos="fade-up" class="text-4xl font-bold">
       Hello,<br> I’m <span class="text-accent">Diana</span>
     </h2>
 
-    <p class="text-muted leading-relaxed">
+    <p data-aos="fade-up" data-aos-delay="150" class="text-muted leading-relaxed">
       I am a tech-driven professional with hands-on experience in <span class="text-accent">IoT-based systems and data analysis</span>,
       passionate about solving real-world problems using data. I enjoy working across the full data lifecycle,
       from <span class="text-accent">data collection using sensors</span> to <span class="text-accent">analysis and visualization for informed decision-making</span>. 
@@ -103,7 +105,7 @@
     </h2>
 
     <div class="grid md:grid-cols-4 gap-8">
-      <div>
+      <div data-aos="zoom-in" data-aos-delay="100">
         <h3 class="text-accent font-semibold mb-4">Core Skills</h3>
         <ul class="space-y-2 text-muted">
           <li>Data & Analytics</li>
@@ -114,7 +116,7 @@
         </ul>
       </div>
 
-      <div>
+      <div data-aos="zoom-in" data-aos-delay="100">
         <h3 class="text-accent font-semibold mb-4">IoT & Smart Systems</h3>
         <ul class="space-y-2 text-muted">
           <li>Sensor Data Collection</li>
@@ -124,7 +126,7 @@
         </ul>
       </div>
 
-      <div>
+      <div data-aos="zoom-in" data-aos-delay="100">
         <h3 class="text-accent font-semibold mb-4">Tools & Technologies</h3>
         <ul class="space-y-2 text-muted">
           <li>Python (pandas, matplotlib)</li>
@@ -149,10 +151,10 @@
     </h2>
 
     <div class="grid md:grid-cols-2 gap-2 items-center">
-      <img src="assets/Farm_project.jpeg" class="rounded-lg"/>
-      <img src="assets/Farm-project2.jpeg" class="rounded-lg h-[270px]"/>
+      <img data-aos="fade-right" src="assets/Farm_project.jpeg" class="rounded-lg"/>
+      <img data-aos="fade-left" src="assets/Farm-project2.jpeg" class="rounded-lg h-[270px]"/>
 
-      <div class="md:col-span-2 mt-6">
+      <div data-aos="fade-up" class="md:col-span-2 mt-6">
         <h3 class="text-2xl font-bold text-accent mb-4">
           IoT-Based Smart Farm Monitoring System
         </h3>
@@ -164,8 +166,8 @@
         </p>
 
         <div class="flex gap-4">
-          <button class="border border-accent px-4 py-2 rounded hover:bg-accent hover:text-bg"
-           onclick="window.open('./assets/IoT_SMART_FARM_REPORT(1).docx')"
+          <button class="border border-accent px-4 py-2 rounded transition transform hover:-translate-y-1 hover:scale-105 duration-300 hover:bg-accent hover:text-bg"
+           onclick="window.open('./assets/IoT_SMART_FARM_REPORT.pdf')"
           >
             View Full Deck
           </button>
@@ -176,7 +178,7 @@
 </section>
 
 <!-- CONTACT -->
- <section id="skills" class="py-24">
+ <section id="contact" class="py-24">
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-3xl font-bold mb-12">
       <span class="border border-accent px-5 py-2 rounded-full text-sm text-accent">
@@ -206,5 +208,13 @@
 
     </section>
 
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 900,
+    once: true,
+    easing: 'ease-out-cubic'
+  });
+</script>
 </body>
 </html>
